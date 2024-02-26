@@ -5,16 +5,17 @@
 Recipe Finder is a web application that allows users to search for recipes based on the dish they want to cook. Users can search for recipes, view recipe details, and explore various dishes. The application utilizes the Forkify API to fetch recipe data.
 
 ## Screenshots
-![Home Page]
+![image](https://github.com/Ayush19bansal/Recipes-Finder/assets/118842033/be04b3e4-1ff9-42e4-9d2d-285283081506)
+
 
 *Figure 1: Home Page*
 
-![Recipe List]
+
 ![image](https://github.com/Ayush19bansal/Recipes-Finder/assets/118842033/3fa2fa6a-ca79-492f-b671-10e71d1e998e)
 
 *Figure 2: Recipe List*
 
-![Recipe Details]
+
 ![image](https://github.com/Ayush19bansal/Recipes-Finder/assets/118842033/7f5c1e59-8f12-46db-a9fd-885eb0033e6d)
 
 *Figure 3: Recipe Details*
