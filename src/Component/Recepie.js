@@ -21,7 +21,6 @@ const Recepie = () => {
         //    console.log();
             setRecipe(data.recipe);
             console.log(recipe);
-            console.log(recipe.ingredients);
         } catch (error) {
             console.log(error);
         }
@@ -32,15 +31,17 @@ const Recepie = () => {
   return (
     
     <div className='singlerecipecontainer'>
+         <Link to={'/foods'}><button className='backbtn'><IoMdArrowRoundBack /></button></Link>
+        <div className='centerdiv'>
         <div className='imagecontainer'>
-            <Link to={'/foods'}><button className='backbtn'><IoMdArrowRoundBack /></button></Link>
+           
             <img src={recipe.image_url} />
         </div>
         <div className='details'>
             <h2>{recipe.title}</h2>
             <p>Provided by: {recipe.publisher}</p>
             <h2>Ingredients</h2>
-            <h5>{recipe.ingredients}</h5>
+            <h5 style={{fontWeight: "250"}}>{recipe.ingredients}</h5>
            
             {/* {
                 recipe.ingredients.map((data)=> (
@@ -50,9 +51,10 @@ const Recepie = () => {
                 ))
 
             } */}
+            </div>
         </div>
     </div>
   )
 }
 
-export default Recepie;
+export default Recepie

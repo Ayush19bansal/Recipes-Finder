@@ -36,13 +36,19 @@ const RecipeList = () => {
         </div>
         <h2>Recipe For: {dish}</h2>
         <div className='foodcontainer'>
-            {receipes.map((dish)=>(
+            {receipes.map((dis)=>(
                 <div className='receipescontaiiner'> 
-                <img src={dish.image_url} alt="" />
-                <h3>{dish.title}</h3>
-                <h5>{dish.publisher}</h5>
+                <img src={dis.image_url} alt="" />
+                <h4>
+                    {dis.title.toLowerCase().includes(dish.toLowerCase()) ? (
+                        <span className="highlight">{dis.title}</span>
+                    ) : (
+                        dis.title
+                    )}
+                </h4>
+                <h5>{dis.publisher}</h5>
                 <div className="btn">
-                    <Link to={`/recipes/${dish.recipe_id}`} >
+                    <Link to={`/recipes/${dis.recipe_id}`} >
                         <button className='detailsbtn'>Details</button>
                     </Link>
                 </div>
